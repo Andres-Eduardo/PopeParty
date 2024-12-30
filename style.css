@@ -120,58 +120,70 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width: 767px) {
-    .texto1, .texto2, .texto3, .texto4, .texto5, .texto6, .texto7 {
+@media screen and (max-width: 360px) {
+    .fondo{
+        position: relative;
+        overflow-x: hidden;
+    }
+    .texto1, .texto2, .texto3 {
         position: absolute;
-        width: 85%;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 80%;
+        left: 15px;
+        transform: none;
+        text-align: left;
     }
     .texto1 {
-        top: 10%;
-        font-size: 14px;
-        text-align: left;
-        left: 20px;
-        transform: none;
+        top: 11%;
+        font-size: 13px;
     }
 
     .texto2 {
         top: 15%;
-        font-size: 14px;
-        text-align: left;
-        left: 20px;
-        transform: none;
+        font-size: 13px;
     }
 
     .texto3 {
-        top: 20%;
-        font-size: 14px;
-        text-align: left;
-        left: 20px;
-        transform: none;
+        top: 19%;
+        font-size: 13px;
     }
 
     .texto4 {
-        top: 25%;
-        font-size: 12px;
+        position: absolute;
+        top: 24%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        width: 90%;
         text-align: center;
     }
 
     .texto5 {
+        position: absolute;
         top: 38%;
-        font-size: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        width: 85%;
         text-align: center;
     }
 
     .texto6 {
+        position: absolute;
         top: 65%;
-        font-size: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 15px;
+        width: 90%;
         text-align: center;
     }
 
     .texto7 {
-        top: 70%;
-        font-size: 12px;
+        position: absolute;
+        top: 69%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        width: 85%;
         text-align: center;
     }
 
@@ -181,41 +193,16 @@ body{
         text-align: center;
         bottom: 2%;
     }
-}
 
-@media screen and (max-width: 360px) {
-    .texto1 {
-        top: 8%;
-        font-size: 12px;
+    .texto8 {
+        left: 10%;
     }
 
-    .texto2 {
-        top: 13%;
-        font-size: 12px;
+    .texto9 {
+        left: 40%;
     }
 
-    .texto3 {
-        top: 18%;
-        font-size: 12px;
-    }
-
-    .texto4 {
-        top: 24%;
-        font-size: 11px;
-    }
-
-    .texto5 {
-        top: 37%;
-        font-size: 11px;
-    }
-
-    .texto6 {
-        top: 64%;
-        font-size: 14px;
-    }
-
-    .texto7 {
-        top: 69%;
-        font-size: 11px;
+    .texto10 {
+        left: 70%;
     }
 }
