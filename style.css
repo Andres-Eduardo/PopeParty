@@ -125,53 +125,60 @@ body{
     .texto1, .texto2, .texto3 {
         width: 90%;
         font-size: clamp(20px, 4vw, 30px);
+        top: 10%;
+        left: 5%;
     }
     
     .texto4, .texto5 {
         width: 80%;
+        top: 30%;
     }
     
     .texto6, .texto7 {
         width: 70%;
         left: 50%;
         transform: translateX(-50%);
+        font-size: clamp(24px, 3.5vw, 36px);
     }
 }
 
 @media screen and (max-width: 480px) {
     .texto1 {
-        top: 80px;
+        top: 50px;
+        font-size: clamp(16px, 4vw, 24px);
     }
     
     .texto2 {
-        top: 160px;
+        top: 120px;
+        font-size: clamp(16px, 4vw, 24px);
     }
     
     .texto3 {
-        top: 240px;
+        top: 190px;
+        font-size: clamp(16px, 4vw, 24px);
     }
     
     .texto4 {
-        top: 320px;
+        top: 270px;
         width: 94%;
         left: 50%;
         transform: translateX(-50%);
     }
     
     .texto5 {
-        top: 420px;
+        top: 350px;
         width: 94%;
         left: 50%;
         transform: translateX(-50%);
     }
     
     .texto6 {
-        top: 520px;
+        top: 430px;
         width: 94%;
     }
     
     .texto7 {
-        top: 600px;
+        top: 510px;
         width: 94%;
     }
     
@@ -183,15 +190,7 @@ body{
         bottom: auto;
         margin: 10px 0;
         text-align: center;
-    }
-}
-
-@media screen and (min-height: 1000px) {
-    .texto6 {
-        top: 60%;
-    }
-    
-    .texto7 {
-        top: 65%;
+        font-size: clamp(14px, 4vw, 20px);
+        top: auto;
     }
 }
