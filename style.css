@@ -185,13 +185,13 @@ body{
     }
     
     .texto6 {
-        top: 64.3%;
+        top: 64.2%;
         left: 30%;
         font-size: 11px;
     }
     
     .texto7 {
-        top: 65.2%;
+        top: 68%;
         left: 35%;
         font-size: 8px;
     }
@@ -204,7 +204,7 @@ body{
         bottom: auto;
         margin: 10px 0;
         text-align: center;
-        font-size: clamp(14px, 4vw, 20px);
+        font-size: 8px;
         top: auto;
     }
 }
