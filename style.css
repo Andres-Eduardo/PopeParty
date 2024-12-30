@@ -164,59 +164,28 @@ body{
 
 @media screen and (max-width: 480px) {
     .texto1, .texto2, .texto3 {
-        font-size: clamp(10px, 2.5vw, 14px);
-        width: 70%;
-        left: 4%;
+        position: absolute;
+        width: 80%;
+        font-size: 14px;
+        left: 10px;
     }
-    .texto4 {
-        top: 23%;
-        left: 4%;
-        font-size: 9px;
-    }
-    .texto5 {
-        top: 38%;
-        left: 18%;
-        font-size: 8px;
-    }
-    .texto6 {
-        top: 65%;
-        left: 28%;
-        font-size: 10px;
-    }
-    .texto7 {
-        top: 66%;
-        left: 33%;
-        font-size: 8px;
-    }
-    .texto8, .texto9, .texto10 {
-        font-size: clamp(8px, 1.5vw, 12px);
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .texto1, .texto2, .texto3 {
-        left: 15px;
-        width: 85%;
+    .texto1 {
+        top: 11%;
     }
     .texto2 {
-        top: 15.5%;
+        top: 16%;
     }
-    
     .texto3 {
-        top: 19.5%;
+        top: 21%;
     }
-    .texto4 {
-        top: 24.5%;
+    .texto4, .texto5, .texto6, .texto7 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
     }
-    
-    .texto5 {
-        top: 39.5%;
-    }
-    
-    .texto6 {
-        top: 65.8%;
-    }
-    .texto7 {
-        top: 66.8%;
-    }
+    .texto4 { top: 26%; }
+    .texto5 { top: 40%; }
+    .texto6 { top: 65%; }
+    .texto7 { top: 69%; }
 }
