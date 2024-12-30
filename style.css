@@ -120,72 +120,90 @@ body{
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 767px) {
     .texto1, .texto2, .texto3, .texto4, .texto5, .texto6, .texto7 {
-        width: 80%;
-        font-size: clamp(12px, 2.5vw, 18px);
+        position: fixed;
+        width: 85%;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
     }
-    .texto1{
-        top: 10%;
-        left: 5%;
+    .texto1 {
+        top: 8vh;
+        font-size: 3.5vw;
     }
     .texto2{
-        top: 15%;
-        left: 5;
+        top: 18vh;
+        font-size: 3.5vw;
     }
     .texto3{
-        top: 18.5%;
-        left: 5;
+        top: 18vh;
+        font-size: 3.5vw;
     }
     .texto4{
-        top: 24%;
-        left: 5;        
+        top: 25vh;
+        font-size: 3vw;
+        text-align: center;
     }
     .texto5{
-        top: 38%;
-        left: 15%
+        top: 38vh;
+        font-size: 3vw;
+        text-align: center;
     }
     .texto6{
-        top: 66%;
-        left: 30%;
+        top: 65vh;
+        font-size: 4vw;
+        text-align: center;
     }
     .texto7{
-        top: 67%;
-        left: 35%;
+        top: 70vh;
+        font-size: 3vw;
+        text-align: center;
     }
     .texto8, .texto9, .texto10 {
-        position: static;
-        width: 100%;
-        margin: 10px 0;
+        position: fixed;
+        bottom: 2vh;
+        font-size: 2.5vw;
         text-align: center;
-        font-size: clamp(10px, 2vw, 14px);
+    }
+
+    .texto8 {
+        left: 10%;
+    }
+
+    .texto9 {
+        left: 40%;
+    }
+
+    .texto10 {
+        left: 70%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .texto1, .texto2, .texto3 {
-        position: absolute;
-        width: 80%;
-        font-size: 14px;
-        left: 10px;
-    }
-    .texto1 {
-        top: 11%;
-    }
-    .texto2 {
-        top: 16%;
-    }
-    .texto3 {
-        top: 21%;
-    }
-    .texto4, .texto5, .texto6, .texto7 {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-    }
-    .texto4 { top: 26%; }
-    .texto5 { top: 40%; }
-    .texto6 { top: 65%; }
-    .texto7 { top: 69%; }
+@media screen and (max-width: 360px) {
+    .texto1 { top: 7vh; }
+    .texto2 { top: 12vh; }
+    .texto3 { top: 17vh; }
+    .texto4 { top: 24vh; }
+    .texto5 { top: 37vh; }
+    .texto6 { top: 64vh; }
+    .texto7 { top: 69vh; }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .texto1 { top: 15vh; }
+    .texto2 { top: 25vh; }
+    .texto3 { top: 35vh; }
+    .texto4 { top: 45vh; }
+    .texto5 { top: 55vh; }
+    .texto6 { top: 70vh; }
+    .texto7 { top: 80vh; }
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
