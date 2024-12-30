@@ -174,21 +174,16 @@ body{
         font-size: 12px;
     }
     
-    .texto8 {
-        bottom: 2%;
-        left: 10%;
-        font-size: 10px;
+    .texto8, .texto9, .texto10 {
+        position: relative;
+        display: block;
+        width: 100%;
+        left: 0;
+        bottom: auto;
+        margin: 10px 0;
+        text-align: center;
+        font-size: 8px;
+        top: auto;
     }
-    
-    .texto9 {
-        bottom: 2%;
-        left: 40%;
-        font-size: 10px;
-    }
-    
-    .texto10 {
-        bottom: 2%;
-        left: 70%;
-        font-size: 10px;
-    }
+
 }
