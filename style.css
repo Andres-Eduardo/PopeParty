@@ -120,58 +120,53 @@ body{
     text-align: center;
 }
 
-@media screen and (min-width: 390px) and (max-width: 400px) and (min-height: 840px) and (max-height: 850px) {
+@media screen and (max-width: 480px) {
     .texto1 {
-        top: 11%;
-        left: 5%;
-        width: 85%;
-        font-size: 14px;
+        top: 12%;
+        left: 4%;
+        font-size: 10px;
+        width: 50%;    
+        word-wrap: break-word;
     }
     
     .texto2 {
-        top: 15%;
-        left: 5%;
-        width: 85%;
-        font-size: 14px;
+        top: 14.2%;
+        left: 4%;
+        font-size: 10px;
+        width: 50%;    
+        word-wrap: break-word;
     }
     
     .texto3 {
-        top: 19%;
-        left: 5%;
-        width: 85%;
-        font-size: 14px;
+        top: 17.5%;
+        left: 4%;
+        font-size: 10px;
+        width: 50%;    
+        word-wrap: break-word;
     }
     
     .texto4 {
-        top: 24%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        font-size: 12px;
+        top: 23.4%;
+        left: 2%;
+        font-size: 9px;           
     }
     
     .texto5 {
-        top: 38%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 85%;
-        font-size: 12px;
+        top: 37.7%;        
+        left: 19%;        
+        font-size: 7px;        
     }
     
     .texto6 {
-        top: 65%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        font-size: 16px;
+        top: 65.2%;
+        left: 30%;
+        font-size: 11px;
     }
     
     .texto7 {
-        top: 69%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 85%;
-        font-size: 12px;
+        top: 66.2%;
+        left: 35%;
+        font-size: 8px;
     }
     
     .texto8, .texto9, .texto10 {
@@ -185,5 +180,4 @@ body{
         font-size: 8px;
         top: auto;
     }
-
 }
