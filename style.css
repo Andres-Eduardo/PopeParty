@@ -120,90 +120,102 @@ body{
     text-align: center;
 }
 
-
 @media screen and (max-width: 767px) {
     .texto1, .texto2, .texto3, .texto4, .texto5, .texto6, .texto7 {
-        position: fixed;
+        position: absolute;
         width: 85%;
-        margin: 0 auto;
         left: 50%;
         transform: translateX(-50%);
-        text-align: left;
     }
     .texto1 {
-        top: 8vh;
-        font-size: 3.5vw;
+        top: 10%;
+        font-size: 14px;
+        text-align: left;
+        left: 20px;
+        transform: none;
     }
-    .texto2{
-        top: 18vh;
-        font-size: 3.5vw;
+
+    .texto2 {
+        top: 15%;
+        font-size: 14px;
+        text-align: left;
+        left: 20px;
+        transform: none;
     }
-    .texto3{
-        top: 18vh;
-        font-size: 3.5vw;
+
+    .texto3 {
+        top: 20%;
+        font-size: 14px;
+        text-align: left;
+        left: 20px;
+        transform: none;
     }
-    .texto4{
-        top: 25vh;
-        font-size: 3vw;
+
+    .texto4 {
+        top: 25%;
+        font-size: 12px;
         text-align: center;
     }
-    .texto5{
-        top: 38vh;
-        font-size: 3vw;
+
+    .texto5 {
+        top: 38%;
+        font-size: 12px;
         text-align: center;
     }
-    .texto6{
-        top: 65vh;
-        font-size: 4vw;
+
+    .texto6 {
+        top: 65%;
+        font-size: 16px;
         text-align: center;
     }
-    .texto7{
-        top: 70vh;
-        font-size: 3vw;
+
+    .texto7 {
+        top: 70%;
+        font-size: 12px;
         text-align: center;
     }
+
     .texto8, .texto9, .texto10 {
-        position: fixed;
-        bottom: 2vh;
-        font-size: 2.5vw;
+        position: absolute;
+        font-size: 10px;
         text-align: center;
-    }
-
-    .texto8 {
-        left: 10%;
-    }
-
-    .texto9 {
-        left: 40%;
-    }
-
-    .texto10 {
-        left: 70%;
+        bottom: 2%;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .texto1 { top: 7vh; }
-    .texto2 { top: 12vh; }
-    .texto3 { top: 17vh; }
-    .texto4 { top: 24vh; }
-    .texto5 { top: 37vh; }
-    .texto6 { top: 64vh; }
-    .texto7 { top: 69vh; }
-}
+    .texto1 {
+        top: 8%;
+        font-size: 12px;
+    }
 
-@media screen and (max-width: 767px) and (orientation: landscape) {
-    .texto1 { top: 15vh; }
-    .texto2 { top: 25vh; }
-    .texto3 { top: 35vh; }
-    .texto4 { top: 45vh; }
-    .texto5 { top: 55vh; }
-    .texto6 { top: 70vh; }
-    .texto7 { top: 80vh; }
-}
+    .texto2 {
+        top: 13%;
+        font-size: 12px;
+    }
 
-.texto-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    .texto3 {
+        top: 18%;
+        font-size: 12px;
+    }
+
+    .texto4 {
+        top: 24%;
+        font-size: 11px;
+    }
+
+    .texto5 {
+        top: 37%;
+        font-size: 11px;
+    }
+
+    .texto6 {
+        top: 64%;
+        font-size: 14px;
+    }
+
+    .texto7 {
+        top: 69%;
+        font-size: 11px;
+    }
 }
