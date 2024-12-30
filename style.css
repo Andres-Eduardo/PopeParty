@@ -123,63 +123,81 @@ body{
 
 @media screen and (max-width: 768px) {
     .texto1, .texto2, .texto3 {
-        width: 90%;
+        width: 50%;
         font-size: clamp(20px, 4vw, 30px);
-        top: 10%;
-        left: 5%;
+        word-wrap: break-word;
     }
-    
+    .texto1{
+        top: 12%;
+        left: 3%;
+    }
+    .texto2{
+        top: 14.5%;
+        left: 3%;
+    }
+    .texto3{
+        top: 18.5%;
+        left: 3%;
+    }
     .texto4, .texto5 {
         width: 80%;
         top: 30%;
     }
-    
-    .texto6, .texto7 {
-        width: 70%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: clamp(24px, 3.5vw, 36px);
+    .texto6{
+        top: 67.5%;
+        left: 25%;
+    }
+    .texto7{
+        top: 68.7%;
+        left: 31%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .texto1 {
-        top: 50px;
+    .texto1, .texto2, .texto3 {
         font-size: clamp(16px, 4vw, 24px);
+        word-wrap: break-word;
+    }
+    .texto1 {
+        top: 12%;
+        left: 4%;
+        font-size: 10px;
     }
     
     .texto2 {
-        top: 120px;
-        font-size: clamp(16px, 4vw, 24px);
+        top: 14.2%;
+        left: 4%;
+        font-size: 10px;
     }
     
     .texto3 {
-        top: 190px;
-        font-size: clamp(16px, 4vw, 24px);
+        top: 17.5%;
+        left: 4%;
+        font-size: 10px;
     }
     
     .texto4 {
-        top: 270px;
-        width: 94%;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 22.8%;
+        left: 10%;
+        font-size: 11px;           
     }
     
     .texto5 {
-        top: 350px;
-        width: 94%;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 37%;        
+        left: 10%;        
+        font-size: 9px;        
     }
     
     .texto6 {
-        top: 430px;
-        width: 94%;
+        top: 64%;
+        left: 25%;
+        font-size: 14px;
     }
     
     .texto7 {
-        top: 510px;
-        width: 94%;
+        top: 65%;
+        left: 28%;
+        font-size: 12px;
     }
     
     .texto8, .texto9, .texto10 {
