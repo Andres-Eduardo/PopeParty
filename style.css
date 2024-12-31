@@ -142,7 +142,7 @@ body{
 
 .temporizador{
     position: absolute;
-    top: 46.7%;
+    top: 46.8%;
     left: 26%;
     display: flex;
     background-color: white;     
@@ -157,7 +157,7 @@ body{
 }
 
 #dias, #horas, #minutos, #segundos{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     color: #00BFFF;    
     border-radius: 8px;
@@ -166,7 +166,7 @@ body{
 }
 
 p{
-    font-size: 9px;
+    font-size: 8px;
     color: #666;
 }
 

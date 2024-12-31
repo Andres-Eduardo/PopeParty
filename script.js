@@ -56,7 +56,7 @@ const numero = "573043258272";
 
 const mensaje = encodeURIComponent("MORAL VOY PA ESA DE CABEZA");
 
-const whatsappURL = 'https://wa.me/${numero}?text=${mensaje}';
+const whatsappURL = `https://wa.me/${numero}?text=${mensaje}`;
 
 whatsappButton.addEventListener('click', () => {
     window.location.href = whatsappURL;
