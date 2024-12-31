@@ -2,176 +2,97 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100vh;
 }
 
 .fondo{
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    height: 100%;
+    overflow: hidden;
 }
 
-.fondo img{
+.fondo img{    
     width: 100%;
     height: 100%;
     object-fit: cover;
+    top: 0;
+    left: 0;
 }
 
-.texto1,.texto2,.texto3{
+.texto1, .texto2, .texto3, .texto4, .texto7{
     font-family: "Montserrat", sans-serif;
-    font-size: clamp(24px, 3vh, 40px);
     color: white;
-}
-
-.textos-pp, .textos-sp, .textos-tp, .textos-cp, .textos-qp{
-    width: 100%;
-    overflow: hidden;
 }
 
 .texto1{
     position: absolute;
-    top: 12%;
-    left: 3%;
-    width: 50%;    
+    top: 11.5%;
+    left: 5%;
+    width: 50%;
     word-wrap: break-word;
+    font-size: 9px;
 }
 
 .texto2{
     position: absolute;
-    top: 14.5%;
-    left: 3%;
-    width: 50%;    
+    top: 14%;
+    left: 5%;
+    width: 50%;
     word-wrap: break-word;
+    font-size: 9px;
 }
 
 .texto3{
     position: absolute;
-    top: 18.5%;
-    left: 3%;
+    top: 17.8%;
+    left: 5%;
     width: 50%;
     word-wrap: break-word;
+    font-size: 9px;
 }
 
 .texto4{
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(20px, 2.5vw, 36px);
-    color: white;
     position: absolute;
     top: 24.3%;
-    left: 10%; 
+    left: 3%;
+    font-size: 9px;
 }
 
 .texto5{
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(20px, 2.5vw, 36px);
-    color: maroon;
     position: absolute;
-    top: 38.9%;
-    left: 10%;
-    text-align: center;
+    color: maroon;
+    top: 39.1%;
+    left: 18%;
+    font-size: 7px;
 }
 
 .texto6{
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(30px, 3.5vw, 51px);
-    color: maroon;
-    top: 67.5%;
-    left: 25%;
     position: absolute;
-    text-align: center;
+    color: maroon;
+    top: 67.7%;
+    left: 33%;
+    font-size: 10px;
 }
 
 .texto7{
+    position: absolute;
+    top: 68.5%;
+    left: 33%;
+    font-size: 8px;
+}
+
+.texto8,.texto9,.texto10{
     font-family: "Montserrat", sans-serif;
-    font-size: clamp(20px, 2.5vw, 36px);
-    color: white;
-    top: 68.7%;
-    left: 31%;
-    position: absolute;
-    text-align: center;
+    font-size: 8px;
+    padding: 5px;
+    margin: 5px;
 }
 
-.texto8, .texto9, .texto10 {
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(14px, 1.5vw, 20px);
-    color: black;
-}
-
-.texto8{
-    top: 95.4%;
-    left: 9%;
-    position: absolute;
-    text-align: center;
-}
-
-.texto9{
-    top: 95.4%;
-    left: 42%;
-    position: absolute;
-    text-align: center;
-}
-
-.texto10{
-    top: 95.4%;
-    left: 70%;
-    position: absolute;
-    text-align: center;
-}
-
-@media screen and (min-width: 390px) and (max-width: 400px) and (min-height: 840px) and (max-height: 850px) {
-    .texto1 {
-        top: calc(120px / 923 * 100%);
-        left: 5%;
-    }
-    
-    .texto2 {
-        top: calc(160px / 923 * 100%);
-        left: 5%;
-    }
-    
-    .texto3 {
-        top: calc(200px / 923 * 100%);
-        left: 5%;
-    }
-    
-    .texto4 {
-        top: calc(250px / 923 * 100%);
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .texto5 {
-        top: calc(390px / 923 * 100%);
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .texto6 {
-        top: calc(660px / 923 * 100%);
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .texto7 {
-        top: calc(700px / 923 * 100%);
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .texto8 {
-        bottom: 2%;
-        left: 10%;
-    }
-    
-    .texto9 {
-        bottom: 2%;
-        left: 40%;
-    }
-    
-    .texto10 {
-        bottom: 2%;
-        left: 70%;
-    }
+.footer-mobile {
+    display: flex; /* Activa el modo Flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    width: 100%; /* Asegúrate de que el contenedor tenga suficiente ancho */
+    height: 100px; /* Ajusta la altura según sea necesario */
 }
