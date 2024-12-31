@@ -146,21 +146,17 @@ body{
     left: 32.5%;
     display: flex;
     background-color: white;     
-    border-radius: 10px;
-    box-shadow: 0 4px 28px rgba(0,0,0,0.1);
+    border-radius: 10px;   
 }
 
-.bloque{
-    text-align: center;
-    margin: 0 10px;
-    top: 20%;
+.bloque{    
+    margin: 0 10px;    
 }
 
 #dias, #horas, #minutos, #segundos{
     font-size: 7px;
     font-weight: bold;
-    color: #00BFFF;    
-    border-radius: 8px;
+    color: #00BFFF;        
     padding: 2px;
     letter-spacing: 1px;
 }
