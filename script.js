@@ -52,7 +52,7 @@ audio.addEventListener('ended', () => {
 
 const whatsappButton = document.getElementById('whatsappButton');
 
-const numero = "573043258272";
+const numero = "573107988158";
 
 const mensaje = encodeURIComponent("MORAL VOY PA ESA DE CABEZA");
 
