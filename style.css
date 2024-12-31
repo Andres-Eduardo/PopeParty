@@ -56,6 +56,7 @@ body{
     top: 24.3%;
     left: 3%;
     font-size: 9px;
+    text-align: center;
 }
 
 .texto5{
@@ -89,10 +90,108 @@ body{
 }
 
 .footer-mobile {
-    display: flex; /* Activa el modo Flexbox */
-    flex-direction: column; /* Coloca los elementos en columna */
-    justify-content: center; /* Centra verticalmente los elementos */
-    align-items: center; /* Centra horizontalmente los elementos */
-    width: 100%; /* Asegúrate de que el contenedor tenga suficiente ancho */
-    height: 100px; /* Ajusta la altura según sea necesario */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    height: 100px;
+}
+
+.btninst{
+    position: absolute;
+    top: 56.7%;
+    left: 17%;
+    background: none;
+    border: none;
+    cursor: pointer;    
+}
+
+.btninst img{
+    width: 120px;
+    height: 25px;
+}
+
+.btninf{
+    position: absolute;
+    top: 74.8%;
+    left: 32%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btninf img{
+    width: 130px;
+    height: 30px;
+}
+
+.btnwassp{
+    position: absolute;
+    top: 87.9%;
+    left: 33%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btnwassp img{
+    width: 120px;
+    height: 20px;
+}
+
+.temporizador{
+    position: absolute;
+    top: 46.7%;
+    left: 26%;
+    display: flex;
+    background-color: white;     
+    border-radius: 10px;
+    box-shadow: 0 4px 28px rgba(0,0,0,0.1);
+}
+
+.bloque{
+    text-align: center;
+    margin: 0 10px;
+    top: 20%;
+}
+
+#dias, #horas, #minutos, #segundos{
+    font-size: 17px;
+    font-weight: bold;
+    color: #00BFFF;    
+    border-radius: 8px;
+    padding: 2px;
+    letter-spacing: 1px;
+}
+
+p{
+    font-size: 9px;
+    color: #666;
+}
+
+.Mapa{
+    position: absolute;
+    top: 54.3%;
+    left: 55%;
+}
+
+iframe{
+    width: 138px;
+    height: 80px;
+}
+
+.btn-audio{
+    position: absolute;
+    top: 81.2%;
+    left: 23.9%;
+    background: none;
+    border: none;
+    cursor: pointer;     
+}
+
+.btn-audio svg{
+    width: 200px;
+    height: 40px;    
+    fill: #64c702; 
 }

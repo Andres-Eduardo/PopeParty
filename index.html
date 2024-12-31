@@ -12,11 +12,12 @@
 <body>
   <div class="fondo">
     <img src="IMG/FONDO DE PAGINA 1920 P.jpg" alt="imagen-fondo">
-
+  
     <div class="texto-superpuesto">
       <div class="textos-pp">
         <p class="texto1">Sabido es, que el 11 de Enero es una fecha especial.</p>
-        <p class="texto2">Nuestro compadre Pope cumple un año más de vida. Por ello nació la tradición del Pope´s Party Este año con una edición muy especial.</p>
+        <p class="texto2">Nuestro compadre Pope cumple un año más de vida. Por ello nació la tradición del Pope´s Party
+          Este año con una edición muy especial.</p>
         <p class="texto3">Queremos que sigan siendo parte de esta gran celebración</p>
       </div>
   
@@ -34,7 +35,64 @@
         <p class="texto7">*Las zorras vienen por separado*</p>
       </div>
     </div>
+  
+    <div class="botones">
+      <button class="btninst" onclick="window.location.href='https://www.instagram.com/_villasol'">
+        <img src="SVG/BOTÓN CHISMOSEA.svg" alt="Boton">
+      </button>
+  
+      <button class="btninf">
+        <img src="SVG/BOTÓN INFORMACIÓN IMPORTANTE.svg" alt="Boton">
+      </button>
+  
+      <button class="btnwassp" id="whatsappButton">
+        <img src="SVG/BOTÓN VOY PA ESAS.svg" alt="Boton">
+      </button>
+    </div>
+  
+    <div class="temporizador">
+      <div class="bloque">
+        <div id="dias">00</div>
+        <p>Dias</p>
+      </div>
+      <div class="bloque">
+        <div id="horas">00</div>
+        <p>Horas</p>
+      </div>
+      <div class="bloque">
+        <div id="minutos">00</div>
+        <p>Minutos</p>
+      </div>
+      <div class="bloque">
+        <div id="segundos">00</div>
+        <p>Segundos</p>
+      </div>
+    </div>
+  
+    <div class="Mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15685.881355092371!2d-72.96955791854045!3d10.620521694700162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8aeeebf278a18d%3A0xae40fdc4d8d786e9!2sFinca%20Villa%20del%20Sol!5e0!3m2!1ses!2sco!4v1735493027836!5m2!1ses!2sco"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  
+    <button class="btn-audio" id="playbutton">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+      </svg>
+    </button>
+    <button class="btn-audio" id="stopbutton" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+      </svg>
+    </button>
+    <audio id="audio" src="audios/audio.mp4"></audio>
+  
   </div>
+  
   <div class="footer-mobile">
     <div class="textos-qp">
       <p class="texto8">Pope`s Country Party © 2024 Copyright.</p>
@@ -42,5 +100,7 @@
       <p class="texto10">Todos los derechos reservados</p>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
