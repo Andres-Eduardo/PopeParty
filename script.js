@@ -69,9 +69,11 @@ const modalImage = document.getElementById('modalImage');
 const closeModal = document.getElementById('closeModal');
 
 profilePhoto.addEventListener('click', () => {
-   const imageSrc = profilePhoto.querySelector('img').src;
-   modalImage.src = imageSrc;
-   photoModal.style.display = 'block';
+   const  img = profilePhoto.querySelector('img');
+   if (img) {
+    modalImage.src = img.src; 
+    photoModal.style.display = 'flex'; 
+  }
 });
 
 closeModal.addEventListener('click', () => {
