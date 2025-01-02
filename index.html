@@ -12,7 +12,16 @@
 <body>
   <div class="fondo">
     <img src="IMG/FONDO DE PAGINA 1920 P.jpg" alt="imagen-fondo">
-  
+
+    <div class="pf" id="pfo">
+      <img src="IMG/primera-foto.jpeg" alt="Foto" class="redondear" loading="lazy" id="">
+    </div>
+
+    <div class="pfaumentada" id="pf">
+      <span class="close" id="closeaumentada">&times;</span>
+      <img alt="Ampliacion de foto" class="pf-content" id="aumentadapf">
+    </div>
+
     <div class="texto-superpuesto">
       <div class="textos-pp">
         <p class="texto1">Sabido es, que el 11 de Enero es una fecha especial.</p>
@@ -89,7 +98,7 @@
           d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
       </svg>
     </button>
-    <audio id="audio" src="audios/audio.mp4"></audio>
+    <audio id="audio" src=""></audio>
   
   </div>
   
@@ -101,6 +110,7 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" async></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

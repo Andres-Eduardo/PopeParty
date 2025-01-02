@@ -61,3 +61,20 @@ const whatsappURL = `https://wa.me/${numero}?text=${mensaje}`;
 whatsappButton.addEventListener('click', () => {
     window.location.href = whatsappURL;
 });
+
+
+const pfo = document.getElementById('pfo');
+const pf = document.getElementById('pf');
+const aumentadapf = document.getElementById('aumentadapf');
+const closeaumentada = document.getElementById('closeaumentada');
+
+pfo.addEventListener('click', () =>{
+    pf.style.display = 'block';
+    aumentadapf.src = pf.querySelector('img').src;
+})
+
+closeaumentada.addEventListener('click', (e) => {
+    if(e.target === pf){
+        pf.style.display = 'none';
+    }
+});
