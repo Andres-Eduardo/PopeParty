@@ -201,8 +201,8 @@ iframe{
     border-radius: 100px;   
 }
 
-.pfaumentada{
-    display: none;
+.modal {
+    display: none; 
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -210,18 +210,18 @@ iframe{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-}
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
 
-.pf-content{
+  .modal-content {
     display: block;
     margin: auto;
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
-}
-
-.close{    
+  }
+  
+  .close {
     position: absolute;
     top: 15px;
     right: 25px;
@@ -229,11 +229,10 @@ iframe{
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-  color: #aaa;
-  text-decoration: none;
-}
-
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #aaa;
+    text-decoration: none;
+  }

@@ -63,18 +63,25 @@ whatsappButton.addEventListener('click', () => {
 });
 
 
-const pfo = document.getElementById('pfo');
-const pf = document.getElementById('pf');
-const aumentadapf = document.getElementById('aumentadapf');
-const closeaumentada = document.getElementById('closeaumentada');
+const profilePhoto = document.getElementById('profilePhoto');
+const photoModal = document.getElementById('photoModal');
+const modalImage = document.getElementById('modalImage');
+const closeModal = document.getElementById('closeModal');
 
-pfo.addEventListener('click', () =>{
-    pf.style.display = 'block';
-    aumentadapf.src = pf.querySelector('img').src;
-})
+profilePhoto.addEventListener('click', () => {
+   const imageSrc = profilePhoto.querySelector('img').src;
+   modalImage.src = imageSrc;
+   photoModal.style.display = 'block';
+});
 
-closeaumentada.addEventListener('click', (e) => {
-    if(e.target === pf){
-        pf.style.display = 'none';
+closeModal.addEventListener('click', () => {
+    photoModal.style.display = 'none';
+    modalImage.src = '';
+});
+
+window.addEventListener('click', (e) => {
+    if(e.target === photoModal) {
+        photoModal.style.display = 'none';
+        modalImage.src = '';
     }
 });
