@@ -69,21 +69,25 @@ const modalImage = document.getElementById('modalImage');
 const closeModal = document.getElementById('closeModal');
 
 profilePhoto.addEventListener('click', () => {
-   const  img = profilePhoto.querySelector('img');
-   if (img) {
-    modalImage.src = img.src; 
-    photoModal.style.display = 'flex'; 
-  }
-});
-
-closeModal.addEventListener('click', () => {
-    photoModal.style.display = 'none';
-    modalImage.src = '';
-});
-
-window.addEventListener('click', (e) => {
-    if(e.target === photoModal) {
-        photoModal.style.display = 'none';
-        modalImage.src = '';
+    const img = profilePhoto.querySelector('img'); // Obtener la imagen
+    if (img && img.src) {
+      modalImage.src = img.src; // Asignar la URL al modal
+      photoModal.style.display = 'flex'; // Mostrar el modal usando flex
+    } else {
+      console.error('No se encontró la fuente de la imagen.');
     }
-});
+  });
+  
+  // Cerrar el modal al hacer clic en el botón de cerrar
+  closeModal.addEventListener('click', () => {
+    photoModal.style.display = 'none'; // Ocultar el modal
+    modalImage.src = ''; // Limpiar el atributo src
+  });
+  
+  // Cerrar el modal al hacer clic fuera de la imagen
+  photoModal.addEventListener('click', (e) => {
+    if (e.target === photoModal) {
+      photoModal.style.display = 'none'; // Ocultar el modal
+      modalImage.src = ''; // Limpiar el atributo src
+    }
+  });
