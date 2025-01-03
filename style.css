@@ -143,26 +143,31 @@ body{
 .temporizador{
     position: absolute;
     top: 46.9%;
-    left: 30%;
+    left: 31%;
     display: flex;
+    justify-content: space-around;
     background-color: white;     
     border-radius: 10px;   
+    max-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .bloque{    
-    margin: 0 7px;    
+    text-align: center;
+    margin: 0 5px;    
 }
 
 #dias, #horas, #minutos, #segundos{
-    font-size: 5px;
+    font-size: 10px;
     font-weight: bold;
     color: #00BFFF;        
     padding: 2px;
     letter-spacing: 1px;
+    
 }
 
 p{
-    font-size: 6px;
+    font-size: 9px;
     color: #666;
 }
 
@@ -205,7 +210,7 @@ iframe{
     position: absolute;
     width: 68%;
     top: 27.1%;
-    left: 20%;
+    left: 16%;
     max-width: 500px;    
     overflow: hidden;
     border-radius: 10px;
