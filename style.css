@@ -143,14 +143,14 @@ body{
 .temporizador{
     position: absolute;
     top: 46.9%;
-    left: 27%;
+    left: 30%;
     display: flex;
     background-color: white;     
     border-radius: 10px;   
 }
 
 .bloque{    
-    margin: 0 10px;    
+    margin: 0 7px;    
 }
 
 #dias, #horas, #minutos, #segundos{
