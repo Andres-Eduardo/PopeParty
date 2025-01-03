@@ -62,32 +62,23 @@ whatsappButton.addEventListener('click', () => {
     window.location.href = whatsappURL;
 });
 
+const galeria = document.querySelector('.galeria');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-const profilePhoto = document.getElementById('profilePhoto');
-const photoModal = document.getElementById('photoModal');
-const modalImage = document.getElementById('modalImage');
-const closeModal = document.getElementById('closeModal');
+let index = 0;
+const totalgaleria = galeria.children.length;
 
-profilePhoto.addEventListener('click', () => {
-    const img = profilePhoto.querySelector('img'); // Obtener la imagen
-    if (img && img.src) {
-      modalImage.src = img.src; // Asignar la URL al modal
-      photoModal.style.display = 'flex'; // Mostrar el modal usando flex
-    } else {
-      console.error('No se encontró la fuente de la imagen.');
-    }
-  });
-  
-  // Cerrar el modal al hacer clic en el botón de cerrar
-  closeModal.addEventListener('click', () => {
-    photoModal.style.display = 'none'; // Ocultar el modal
-    modalImage.src = ''; // Limpiar el atributo src
-  });
-  
-  // Cerrar el modal al hacer clic fuera de la imagen
-  photoModal.addEventListener('click', (e) => {
-    if (e.target === photoModal) {
-      photoModal.style.display = 'none'; // Ocultar el modal
-      modalImage.src = ''; // Limpiar el atributo src
-    }
-  });
+function actualizarCarruselPosicion(){
+  galeria.style.transform = `translatex(-${index * 100}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+  index = (index === 0) ? totalgaleria - 1 : index - 1;
+  actualizarCarruselPosicion();
+})
+
+nextBtn.addEventListener('click', () => {
+  index = (index === totalgaleria - 1) ? 0 : index + 1;
+  actualizarCarruselPosicion();
+})
