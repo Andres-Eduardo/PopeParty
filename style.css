@@ -154,7 +154,7 @@ body{
 }
 
 #dias, #horas, #minutos, #segundos{
-    font-size: 10px;
+    font-size: 5px;
     font-weight: bold;
     color: #00BFFF;        
     padding: 2px;
@@ -162,7 +162,7 @@ body{
 }
 
 p{
-    font-size: 9px;
+    font-size: 6px;
     color: #666;
 }
 
