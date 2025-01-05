@@ -26,7 +26,7 @@ body{
 
 .texto1{
     position: absolute;
-    top: 11.5%;
+    top: 11.8%;
     left: 5%;
     width: 50%;
     word-wrap: break-word;
@@ -62,7 +62,7 @@ body{
 .texto5{
     position: absolute;
     color: maroon;
-    top: 39.1%;
+    top: 38.9%;
     left: 18%;
     font-size: 7px;
 }
@@ -70,14 +70,14 @@ body{
 .texto6{
     position: absolute;
     color: maroon;
-    top: 67.7%;
-    left: 33%;
-    font-size: 10px;
+    top: 67.45%;
+    left: 28%;
+    font-size: 10px;    
 }
 
 .texto7{
     position: absolute;
-    top: 68.5%;
+    top: 68.4%;
     left: 33%;
     font-size: 8px;
 }
@@ -100,7 +100,7 @@ body{
 
 .btninst{
     position: absolute;
-    top: 56.7%;
+    top: 58%;
     left: 17%;
     background: none;
     border: none;
@@ -114,7 +114,7 @@ body{
 
 .btninf{
     position: absolute;
-    top: 74.8%;
+    top: 74.5%;
     left: 32%;
     background: none;
     border: none;
@@ -128,7 +128,7 @@ body{
 
 .btnwassp{
     position: absolute;
-    top: 87.9%;
+    top: 87.5%;
     left: 33%;
     background: none;
     border: none;
@@ -142,14 +142,12 @@ body{
 
 .temporizador{
     position: absolute;
-    top: 46.9%;
-    left: 29.2%;
+    top: 46.2%;
+    left: 29.7%;
     display: flex;
     justify-content: space-around;
-    background-color: white;     
-    border-radius: 10px;   
-    max-width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;       
+    max-width: 200px;   
 }
 
 .bloque{    
@@ -158,7 +156,7 @@ body{
 }
 
 #dias, #horas, #minutos, #segundos{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     color: #00BFFF;        
     padding: 2px;
@@ -172,7 +170,7 @@ p{
 
 .Mapa{
     position: absolute;
-    top: 54.3%;
+    top: 55.5%;
     left: 55%;
 }
 
@@ -183,7 +181,7 @@ iframe{
 
 .btn-audio{
     position: absolute;
-    top: 81.2%;
+    top: 81.1%;
     left: 23.9%;
     background: none;
     border: none;
@@ -192,7 +190,7 @@ iframe{
 
 .btn-audio svg{
     width: 200px;
-    height: 40px;    
+    height: 30px;    
     fill: #64c702; 
 }
 
